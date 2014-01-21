@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<?php include("inc/head.php");?>
+<title><?php echo $domain_name;?></title>
+</head>
+<body style="background-image: url('images/background.jpg')">
+<div>
+<?php
+@session_start ();
+if(isset($_SESSION['user_id']))
+	include "inc/header1.php";
+else
+	include "inc/header.php";
+?>
+<?php include("inc/content.php");?>
+</div>
+</div>
+</body>
+
+</html>

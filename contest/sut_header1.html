@@ -1,0 +1,78 @@
+
+<style>
+
+.X{
+
+	float:right;
+
+	margin-top:45px;
+
+}
+
+body{
+
+	width:1000px;
+
+	text-align:center;
+
+	margin-right: auto;
+
+	margin-left: auto; 
+	background-image: url(../JudgeOnline/image/background.jpg);
+
+}
+
+.logo{
+
+	float:left;
+
+	height:40px;
+
+	width:198px;
+
+	margin-top:36px;
+
+	}
+
+</style>
+
+<div style="width:952px;">
+<a href="index.php"><img class="logo" src="../logo/8.png" border="0"/></a>
+<span class="X">
+<img src="../logo/header_contest.png"  border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="3,2,55,31" href="../contest/index.php" />
+  <area shape="rect" coords="69,2,132,31" href="../JudgeOnline/contest.php?cid=1013"/>
+  <area shape="rect" coords="156,2,234,32" href="../timeline/index.html" />
+  <area shape="rect" coords="253,2,336,31" href="acm_2_scan_Member.php" />
+  <area shape="rect" coords="352,2,410,31" href="javascript:update()" />
+  <area shape="rect" coords="429,2,480,31" href="javascript:logout()" />
+</map>
+<!--<map name="Map" id="Map">
+  <area shape="rect" coords="3,2,50,26" href="../JudgeOnline/contest.php?cid=1010" target="_top" />
+  <area shape="rect" coords="59,2,125,26" href="javascript:register();" target="_top">
+  <area shape="rect" coords="134,2,210,26" href="acm_2_scan_Member.php">
+  <area shape="rect" coords="219,2,285,26" href="javascript:update()">
+  <area shape="rect" coords="368,2,440,26" href="javascript:logout()" >
+</map>-->
+</span>
+</div>
+<br>
+<script language="javascript" type="text/javascript">
+function register()
+{
+	alert ("报名日期为10月17日");
+}
+function update()
+{
+	//window.location.href="acm_2_updatepage.php";
+	alert ("报名已截止，不允许修改");
+}
+function logout()
+{
+	if(confirm("Do you want to Exit?")==true)
+	{
+		window.location.href="../JudgeOnline/logout.php";	
+	}
+}
+</script>

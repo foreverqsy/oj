@@ -1,0 +1,35 @@
+
+<!---------------------------------------------------------------------------
+
+<style type="text/css">
+/*global
+========================================================================*/
+*{margin:0;padding:0;}header,footer,section,nav{display:block;}a,a:hover,a:active{text-decoration:none;color:<?php echo get_light_color();?>;}input{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+/*grid elem
+=======================================================================*/
+body{background:<?php echo get_dark_color();?> url(<?php echo get_bg_image();?>);font-family:<?php echo get_font();?>;font-size:<?php echo get_font_size();?>;color:<?php echo get_dark_color();?>;}
+.content{box-shadow:0 0 50px #000;}
+.content,.container,.fborder{background:<?php echo get_light_color();?>;}
+header,.pointer,.border,.login{background-color:<?php echo get_border_color();?>;}
+header{background-image:url(<?php echo get_header_image();?>);}
+header,nav,.box{color:<?php echo get_light_color();?>;}
+nav,.box{background-color:<?php echo get_dark_color();?>;}
+footer{background-color:<?php echo get_lighter_color();?>;}
+footer xmp,.dark{color:<?php echo get_grey_color();?>;}
+nav li{background:url(<?php echo get_nav_border();?>) no-repeat right center;background-color:<?php echo get_dark_color();?>;}
+/*form elem
+========================================================================*/
+button{color:<?php echo get_border_color();?>;background:<?php echo get_light_color();?>;}
+button:hover{cursor:<?php echo get_cursor();?>;}
+button:active{color:<?php echo get_lighter_color();?>;background:<?php echo get_border_color();?>;}
+.login input{border:1px <?php echo get_light_color();?> solid;background:<?php echo get_lighter_color();?>;color:<?php echo get_grey_color();?>;text-align:right;}
+.login input:focus{color:<?php echo get_dark_color();?>;text-align:left;}
+/*box
+========================================================================*/
+.box i{border-color:<?php echo "transparent ".get_light_color()." ".get_light_color()." transparent";?>;}
+.box img{border:10px <?php echo get_light_color();?> solid;}
+.box div{border:5px <?php echo get_dark_color();?> solid;}
+.box .border{background:<?php get_light_color();?>;width:100%;height:1px;display: block;}
+</style>
+------------------------------------------------------------------------------------>
+

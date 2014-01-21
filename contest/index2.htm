@@ -1,0 +1,118 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+﻿<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="description" content="沈阳工业大学ACM">
+<meta name="author" content="gongbaodd" >
+<meta name="keywords" content="sut,acm,acm-icpc,沈阳工业大学,Shenyang University Of Technology">
+<meta name="google-site-verification" content="gZWggbZzglzVcu2-IOfFzG67KurVCKkAtr0M0-9oc78" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="icon/favicon.ico">
+<link rel="apple-touch-icon" href="icon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-touch-icon-114x114.png">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="js/pie.js"></script>
+<style>
+.img i,.pointer,.border,.fborder{display:none;}
+.content,.container{width:1000px;}
+header{background:#09f;height:150px;padding-top:20px;}
+.logo{float:left;}
+nav li{background-image:none;}
+</style>
+<![endif]-->
+<script>
+//IE outdate friendly warning if you don't want remove it
+var $buoop = {vs:{i:8,f:3.6,o:10.6,s:3.2,n:9}} 
+$buoop.ol = window.onload; 
+window.onload=function(){ 
+try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
+var e = document.createElement("script"); 
+e.setAttribute("type", "text/javascript"); 
+e.setAttribute("src", "js/update.js"); 
+document.body.appendChild(e); } 
+</script>
+<script language="javascript" type="text/javascript" src="contest/include/ajax.js"></script>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<title>沈阳工业大学ACM</title>
+</head>
+<body>
+<div class="content">
+<div class="container" style="padding:0"><header id="header">
+<div class="logo"><h3>sutacm</h3><h1>工大ACM<img src="image/logo.png" alt="Logo" width="40px" height="40px"></h1></div>		
+<div class="user" ><a href="#" class="plus" id="out"></a>
+ 
+</div>
+<div id="logout"></div>
+</header>
+<?
+///////////////////////////////////////////////////////////////////////
+/////
+/////		此处写的是主页nav部分
+/////		函数能读取指定目录下的指定php文件并读取文件中$title="";的部分
+/////
+///////////////////////////////////////////////////////////////////////
+?>
+
+<nav><ul><li><a href="index.php"><img src="image/home.gif" alt="首页" ><span>首页</span></a></li><li><a href="admin.php">送球</a></li><li><a href="contest.php">比赛</a></li><li><a href="out.php">成员信息</a></li><li><a href="share.php">分享</a></li><li><a href="team.php">参赛队</a></li><li><a href="timeline.php">时光轴</a></li><li><a href="more.php">more</a></li></ul></nav>
+</div>
+<div id="home" style="width:100%;display:none;"><marquee behavior=alternate scrollamount=20><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div></marquee>
+<style type="text/css">
+.blue,.dark{width:15px;height:15px;margin:0.5em;float:left;}
+.blue{background:#09f;}
+.dark{background:#222;}
+</style></div>
+<div id="regist" style="width:100%;display:none;"><marquee behavior=alternate scrollamount=20><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div><div class="blue"></div><div class="dark"></div></marquee>
+<style type="text/css">
+.blue,.dark{width:15px;height:15px;margin:0.5em;float:left;}
+.blue{background:#09f;}
+.dark{background:#222;}
+</style></div>
+<script type="text/javascript" >
+$(document).ready(function(){
+$('.plus').click(
+function(){
+	$('#regist').slideDown('slow',
+	function(){
+		$("html,body").animate({scrollTop:$("#regist").offset().top},"slow");
+		$('#regist').load('inc/regist');
+		return false;
+	});
+});
+
+var out="<a href=\"javascript:return false;\" class=\"out\" ></a>";
+
+});
+</script>
+<script type="text/javascript" src="js/header.js"></script>
+<div class="container"><h2 style="font-weight:thin;">你可能想找的<div class="pointer"	><a href="#want"></a></div></h2></div><div class	="border"></div>
+<div class="container" id="want"><section><ul>
+<li class="box" id="box"><a href="share/acm/index.html"><div><h5>ACM校赛</h5><p>第四届沈阳工业大学ACM校赛</p></div><div class="img"><i></i><img src="./link/0.jpg" alt="第四届沈阳工业大学ACM校赛" width="120" height="120"></div></a></li><li class="box" id="box"><a href="share/acm/acmReadme.pdf"><div><h5>报名演示</h5><p>沈阳工业大学ACM校赛报名演示</p></div><div class="img"><i></i><img src="./link/1.jpg" alt="沈阳工业大学ACM校赛报名演示" width="120" height="120"></div></a></li><li class="box" id="box"><a href="share/province_entrance.pdf"><div><h5>省赛选拔规则</h5><p>沈阳工业大学省赛选拔规则</p></div><div class="img"><i></i><img src="./link/2.jpg" alt="沈阳工业大学省赛选拔规则" width="120" height="120"></div></a></li><li class="box" id="box"><a href="sutTAOnline"><div><h5>排课系统</h5><p>沈阳工业大学信息学院实验室排课系统</p></div><div class="img"><i></i><img src="./link/3.jpg" alt="沈阳工业大学信息学院实验室排课系统" width="120" height="120"></div></a></li><li class="box" id="box"><a href="time"><div><h5>开发日记</h5><p>sutacm.com开发日记</p></div><div class="img"><i></i><img src="./link/4.jpg" alt="sutacm.com开发日记" width="120" height="120"></div></a></li></script></ul></section></div>
+<link rel="stylesheet" href="css/globalcolor.css" type="text/css">
+<link rel="stylesheet" href="css/grid.css" type="text/css">
+<link rel="stylesheet" href="css/box.css" type="text/css">
+<link rel="stylesheet" href="css/usr.css" type="text/css">
+<div class="fborder"><div><span class="tower"></span><span class="sut"></span><span class="tower"></span></div></div>
+<footer><div class="acm"></div>
+<small><xmp>Shenyang University Of Technology 
+Online Judge 12.04 
+Copyright 2010-2013
+© SUT ACM TEAM
+Powered By hustoj
+All Copyright Reserved
+GPL2.0 2011</xmp></small></footer>
+
+<script type="text/javascript" >
+$(document).ready(function(){
+$('.box').hover(function(){var Browser_width=document.body.clientWidth;if(Browser_width>768){$(this).find('p').slideDown()};},
+function(){var Browser_width=document.body.clientWidth;if(Browser_width>768){$(this).find('p').slideUp()};});
+});
+</script>
+
+</div>
+</div>
+</body>
+</html>

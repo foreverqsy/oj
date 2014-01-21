@@ -1,0 +1,31 @@
+/* This page is code by Juexin Wang */
+@charset "utf-8";@font-face{font-family:'league-gothic-1';src:url('fonts/League_Gothic-webfont.eot');src:local('☺'),
+url('fonts/League_Gothic-webfont.woff') format('woff'),
+url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+url('fonts/League_Gothic-webfont.svg#webfontOTINA1xY') format('svg');font-weight:normal;font-style:normal;}
+body{font-family:league-gothic-1, Impact, sans-serif;width:960px;margin:auto;background-color:#90ae1f;}
+#container{position:relative;}
+#now_background{background-color:#90ae1f;position:absolute;left:50%;margin-left:-231px;margin-top:-50px;z-index:-1;opacity:0;}
+#now_title{position:relative;color:rgb(101,122,21);font-size:200px;text-align:center;text-shadow:rgba(0,0,0,0.3) 0px 0px 12px;margin-top:50px;cursor:default;}
+#now_subtitle{color:rgba(0,0,0,0.3);font-size:90px;margin-top:-20px;padding:0px 70px;overflow:hidden;cursor:default;}
+#now_subtitle_past{float:left;opacity:0;}
+#now_subtitle_future{float:right;opacity:0;}
+#now_nav{position:relative;height:240px;}
+#now_nav_past{width:130px;height:130px;border-radius:65px;position:absolute;top:35px;left:80px;}
+#now_nav_dragLeft{position:absolute;left:250px;opacity:0;z-index:3;}
+#now_nav_dragLeft img{width:130px;padding:20px 15px;}
+#now_nav_drag{position:relative;z-index:2;width:200px;height:200px;border-radius:100px;position:absolute;left:50%;margin-left:-100px;}
+#now_nav_dragRight{position:absolute;right:250px;opacity:0;z-index:3;}
+#now_nav_future{width:130px;height:130px;border-radius:65px;position:absolute;top:35px;right:80px;}
+#now_nav_past_hint{position:absolute;font-size:60px;width:300px;top:-20px;left:20px;color:rgba(0,0,0,0.4);opacity:0;cursor:default;}
+#now_nav_past_icon{position:relative;width:106px;height:106px;border-radius:53px;top:12px;left:12px;cursor:pointer;}
+#now_nav_drag_icon{background-image:url(../image/branch.png);position:relative;width:170px;height:170px;border-radius:85px;top:15px;left:15px;cursor:pointer;z-index:2;}
+#now_nav_drag_icon p{position:absolute;color:rgba(0,0,0,0.8);text-align:center;font-size:35px;top:60px;width:100%;}
+#now_nav_future_icon{position:relative;width:106px;height:106px;border-radius:53px;top:12px;left:12px;}
+.circle_color_outside{background-color:rgb(101,122,21);box-shadow:inset rgba(0,0,0,0.3) 0 0 50px, rgba(0,0,0,0.3) 0 0 20px;}
+.circle_color_inside{background-color:#90ae1f;box-shadow:inset rgba(0,0,0,0.3) 0 0 10px, rgba(0,0,0,0.3) 0 0 10px;}
+#image_branch{position:relative;width:195px;height:195px;margin-top:-20px;margin-left:-20px;z-index:1;}
+#image_drag{}
+#now_footer{color:rgba(0,0,0,0.5);text-align:center;font-size:24px;}
+#logo{width:60px;margin:5px;}
+.icon_image{width:90px;height:90px;margin:8px;border:0px;}

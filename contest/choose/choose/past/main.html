@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Know about the Past</title>
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{ background:url(image/20081416341924_2.jpg) no-repeat;color:#000;font-family:'Georgia', 'Trebuchet MS', serif;font-size:12px;}
+a{color:#000;text-decoration:none;}
+.clr{clear:both;}
+.container {width:100%;position:relative;z-index:100;margin:0 auto;}
+.header{padding-top:40px;}
+.content {width:1000px;margin:0 auto;}
+.titles{margin:10px 0 0px 20px;font-size:40px;color:#000;text-shadow:1px 1px 1px #fff;font-family: 'Wire One', arial, serif;text-align:center;}
+.titles span{font-size:22px;text-transform:uppercase;}
+.titlesh2{text-align:center;font-family:Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;font-size:26px;color:#333;margin:20px 0 0 0;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/stimenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+</head>
+<body>
+<div style="float:left;"><a href="../index.html" title="回到主页"><img src="image/20100916225535292.png"></a></div><div style="font-family:'Microsoft YaHei', 'New York', serif; color:#999; font-size:46px; margin-left:500px; margin-top:100px;">Know About the Past</div>
+<div class="container">
+	<ul id="sti-menu-02" class="sti-menu">
+		<li data-hovercolor="#37c5e9">
+			<a href="test2.html">
+				<h2 data-type="mText" class="sti-item">"我"的财富</h2>
+				<h3 data-type="sText" class="sti-item">世界资源概况</h3>
+				<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+			</a>
+		</li>
+		<li data-hovercolor="#ff395e">
+			<a href="wuzhong.html">
+				<h2 data-type="mText" class="sti-item">"我"的灵魂</h2>
+				<h3 data-type="sText" class="sti-item">多种物种濒临灭绝</h3>
+				<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+			</a>
+		</li>
+		<li data-hovercolor="#57e676">
+			<a href="blood.html">
+				<h2 data-type="mText" class="sti-item">"我"的血液</h2>
+				<h3 data-type="sText" class="sti-item">水资源</h3>
+				<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+			</a>
+		</li>
+		<li data-hovercolor="#d869b2">
+			<a href="daqi.html">
+				<h2 data-type="mText" class="sti-item">"我"的防御系统</h2>
+				<h3 data-type="sText" class="sti-item">臭氧层</h3>
+				<span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+			</a>
+		</li>
+		<li data-hovercolor="#ffdd3f">
+			<a href="senlin.html">
+				<h2 data-type="mText" class="sti-item">"我"的能量</h2>
+				<h3 data-type="sText" class="sti-item">森林资源</h3>
+				<span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+			</a>
+		</li>
+	</ul>
+	
+	<div class="clr"></div>
+	<script type="text/javascript">
+	$(function() {
+		$('#sti-menu-02').iconmenu({
+			animMouseenter	: {
+				'mText' : {speed : 400, easing : 'easeOutExpo', delay : 140, dir : 1},
+				'sText' : {speed : 400, easing : 'easeOutExpo', delay : 0, dir : 1},
+				'icon'  : {speed : 800, easing : 'easeOutBounce', delay : 280, dir : 1}
+			},
+			animMouseleave	: {
+				'mText' : {speed : 400, easing : 'easeInExpo', delay : 140, dir : 1},
+				'sText' : {speed : 400, easing : 'easeInExpo', delay : 280, dir : 1},
+				'icon'  : {speed : 400, easing : 'easeInExpo', delay : 0, dir : 1}
+			}
+		});
+	});
+	</script>
+</div>
+</body>
+</html>

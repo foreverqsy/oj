@@ -1,0 +1,156 @@
+﻿
+<?php
+@session_start(); 
+if(isset($_SESSION['user_id']))$tips='yes';
+else $tips='no';
+include_once "./JudgeOnline/include/db_info.inc.php";
+////////////////////////////////////////////////////////////////////////////////////////////
+//////
+/////		本页用于<head>部分,需确定有global_elem.php文件!
+/////
+//////////////////////////////////////////////////////////////////////////////////////////// 
+	include("global_elem.php");
+	include("view.html");
+	include_once("global_color.php");
+?>
+<meta name="description" content="<?php echo $domain_name;?>">
+<meta name="author" content="gongbaodd" >
+<meta name="keywords" content="<?php echo $keywords;?>">
+<meta name="google-site-verification" content="gZWggbZzglzVcu2-IOfFzG67KurVCKkAtr0M0-9oc78" />
+
+<?php
+///////////////////////////////////////////////////////////////////////////
+//////
+//////		ICON\global_color_style
+/////
+///////////////////////////////////////////////////////////////////////////
+	include("icon.html");
+	//include("global_color_style.php");
+//////////////////////////////////////////////////////////////////////////////
+/////
+/////		浏览器兼容问题
+/////
+////////////////////////////////////////////////////////////////////////////////
+	include("ie.php");
+///////////////////////////////////////////////////////////////////////////
+/////
+/////		樊神源码
+/////
+//////////////////////////////////////////////////////////////////////////
+?>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/fade.js"></script>
+<script src="js/maxheight.js" type="text/javascript"></script> <!--对可拓展滚动工具条的拓展-->
+<script src="js/jquery.faded.js" type="text/javascript"></script><!--对图片展示区的渐变滚动设置-->
+<script src="js/jcarousellite.js" type="text/javascript"></script><!--对可拓展滚动工具条的高度设置-->
+<script src="js/script.js" type="text/javascript"></script> <!--对可拓展滚动工具条的滚动设置-->
+<link href="css/form.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="css/reg.css" media="all" rel="stylesheet" type="text/css"/>
+
+<link rel="stylesheet" type="text/css" href="css/scrollstyle.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+ 
+<link href="css/header.css" rel="stylesheet" charset="gb2312"/>
+
+<!--[if lt IE 7]>
+   <link href="css/ie6.css" rel="stylesheet" type="text/css" /><!--对IE6进行兼容-->
+<![endif]->
+<style type="text/css">
+.text90{ width: 90px; height:22px }
+input { border:#879BFF 1px dashed; font-size:14px; background-color:transparent; vertical-align: middle }
+.button40{ width: 54px; height:24px; background-color:F4FBFF; font-family:Tahoma; font-size:12px }
+</style>
+
+
+<script language="javascript" type="text/javascript" src="contest/include/ajax.js"></script>
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/check_form_special.js" ></script>
+<link rel="stylesheet" href="css/slide.css" type="text/css" media="screen" />
+
+<script type="text/javascript">
+$(document).ready(
+	function()
+	{
+		var active1 = false;
+		var active2 = false;
+		$('#add_img').hover(
+			function()
+			{
+				$(this).attr('src','reg_img/add_active.png')	
+			},
+			function()
+			{
+				$(this).attr('src','reg_img/add.png')	
+			}
+		);
+		$('#add_img').click(
+			function()
+			{
+				if((active1==false)&&(active2==false))
+				{
+					show('#team_member1');
+					active1 = true;	
+				}
+				else if((active1==false)&&(active2==true))
+				{
+					show('#team_member1');
+					$('#add_img').animate({opacity:0});
+					active1 = true;	
+				}
+				else if((active1==true)&&(active2==false))
+				{
+					show('#team_member2');
+					$('#add_img').animate({opacity:0});
+					active2 = true;	
+				}
+			}
+		);
+		$('#cancel_img1').hover(
+			function()
+			{
+				$(this).attr('src','reg_img/cancel_active.png')	
+			},
+			function()
+			{
+				$(this).attr('src','reg_img/cancel.png')	
+			}
+		);
+		$('#cancel_img1').click(
+			function()
+			{
+					hide('#team_member1');
+					$('#add_img').animate({opacity:1});
+					form.team_number2.value = "";
+					form.team_member2.value = "";
+					active1 = false;	
+			}
+		);
+		$('#cancel_img2').hover(
+			function()
+			{
+				$(this).attr('src','reg_img/cancel_active.png')	
+			},
+			function()
+			{
+				$(this).attr('src','reg_img/cancel.png')	
+			}
+		);
+		$('#cancel_img2').click(
+			function()
+			{
+					hide('#team_member2');
+					$('#add_img').animate({opacity:1});
+					form.team_number3.value = "";
+					form.team_member3.value = "";
+					active2 = false;	
+			}
+		);
+	}
+);
+</script>
+
+
+

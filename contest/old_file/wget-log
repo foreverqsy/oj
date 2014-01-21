@@ -1,0 +1,47 @@
+Retrying.
+
+--2012-09-24 17:49:04--  (try: 8)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 17:52:21--  (try: 9)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 17:55:39--  (try:10)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 17:58:58--  (try:11)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:02:17--  (try:12)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:05:36--  (try:13)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:08:55--  (try:14)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:12:14--  (try:15)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:15:33--  (try:16)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:18:52--  (try:17)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... failed: Connection timed out.
+Retrying.
+
+--2012-09-24 18:22:11--  (try:18)  http://10.16.5.5/login/acmer4.txt
+Connecting to 10.16.5.5:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2012-09-24 18:22:11 ERROR 404: Not Found.
+
